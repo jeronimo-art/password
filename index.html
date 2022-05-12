@@ -9,11 +9,25 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="estilos.css" />
-    <title>Password generator</title>
+    <title>Generador de contraseñas</title>
   </head>
   <body>
-    <div id="loader"></div>
-    <h1 id="idioma"></h1>
+    <div class="container">
+      <form action="" id="app">
+        <div id="center">
+          <input id="new-password" />
+          <i id="copy" class="far fa-copy"></i>
+        </div>
+      </form>
+      <button id="btn-new">Nueva contraseña</button>
+      <button id="btn-add">Añadir</button>
+      <p id="open-password">Contraseñas guardadas</p>
+      <div class="passwords"></div>
+    </div>
+    <div id="copied"></div>
+    <div class="saved" id="saved">
+    </div>
+    <div id="overly"></div>
     <script src="script.js"></script>
   </body>
 </html>
